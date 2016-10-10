@@ -1,0 +1,24 @@
+{
+  "name": "data-visualization",
+  "version": "1.0.0",
+  "description": "for visualize CSV data",
+  "main": "dataConverter.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SARAN-thala/DataVisualization.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SARAN-thala/DataVisualization/issues"
+  },
+  "homepage": "https://github.com/SARAN-thala/DataVisualization#readme",
+  "dependencies": {
+    "lodash": "^4.16.4",
+    "mocha": "^3.1.1",
+    "papaparse": "^4.1.2"
+  }
+}
