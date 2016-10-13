@@ -1,0 +1,22 @@
+.container {
+    border: 1px solid black;
+}
+
+.container svg {
+    border: 1px solid grey;
+}
+
+.container circle {
+    fill: steelblue;
+}
+
+.domain{
+    stroke: grey;
+    stroke-width: 1px;
+}
+path{
+    fill: none;
+    stroke: lightsteelblue;
+    stroke-width: 1px;
+    /*shape-rendering: crispEdges;*/
+}
