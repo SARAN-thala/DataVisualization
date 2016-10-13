@@ -1,12 +1,12 @@
-const _ = require ('lodash');
+const _ = require('lodash');
 
 exports.passengerDetailsWhoMetWithAccident = function (totalData) {
     var output = [];
     _.mapValues(totalData, function (o) {
-        var aboardCount = 0;
-        var fatalityCount = 0;
-        var groundCount = 0;
-        var result = {};
+        let aboardCount = 0;
+        let fatalityCount = 0;
+        let groundCount = 0;
+        let result = {};
         _.mapValues(o, function (e) {
             result.year = e["Date"].split('/')[2]
             result.Aboard = aboardCount += +(e.Aboard);
@@ -18,11 +18,11 @@ exports.passengerDetailsWhoMetWithAccident = function (totalData) {
     return output;
 };
 
-exports.countryWiseCountOfIncidents = function(totalData){
+exports.countryWiseCountOfIncidents = function (totalData) {
     var output = [];
-    _.mapValues(totalData,function(o){
-        var count = 0;
-        var result = {};
+    _.mapValues(totalData, function (o) {
+        let count = 0;
+        let result = {};
         result.location = o[0]["Location"].split(',').splice(-1)[0].trim(' ');
         result.count = o.length;
         output.push(result);
