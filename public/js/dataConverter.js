@@ -2,9 +2,9 @@ const papa = require('papaparse');
 const fs = require('fs');
 const _ = require('lodash');
 const lib = require('./dataParser');
-const inputData = '../data/rawData.csv';
-var dateCSV = '../data/date.csv';
-var countryBasedCSV = '../data/countryBased.csv';
+const inputData = './public/data/rawData.csv';
+var dateCSV = './public/data/date.csv';
+var countryBasedCSV = './public/data/countryBased.csv';
 
 const data = fs.readFileSync(inputData, 'UTF8');
 var jsonData = papa.parse(data, {header: true}).data;
