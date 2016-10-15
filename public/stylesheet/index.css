@@ -1,5 +1,6 @@
 .container {
     border: 1px solid black;
+    height: 656px;
 }
 
 .container svg {
@@ -10,13 +11,18 @@
     fill: steelblue;
 }
 
-.domain{
+.domain {
     stroke: grey;
     stroke-width: 1px;
 }
-path{
+
+path {
     fill: none;
     stroke: lightsteelblue;
     stroke-width: 1px;
     /*shape-rendering: crispEdges;*/
+}
+
+.grid {
+    stroke: lightgrey;
 }
