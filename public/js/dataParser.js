@@ -26,6 +26,6 @@ exports.countryWiseCountOfIncidents = function (totalData) {
         result.location = o[0]["Location"].split(',').splice(-1)[0].trim(' ');
         result.count = o.length;
         output.push(result);
-    })
+    });
     return output;
 };

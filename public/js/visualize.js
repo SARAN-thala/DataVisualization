@@ -69,6 +69,17 @@ const loadChart = function (quotes) {
         .attr('y2', 0.5)
         .classed('grid', true);
 
+
+    svg.append('text')
+        .attr('text-anchor', 'middle')
+        .attr('transform', `translate(${MARGIN + 600}, ${HEIGHT - 10})`)
+        .text('Years');
+
+    svg.append('text')
+        .attr('text-anchor', 'middle')
+        .attr('transform', `translate(${MARGIN - 38}, ${MARGIN + 300})rotate(-90)`)
+        .text('Fatalities')
+
     //--line--
     let path = g.append('path');
 
