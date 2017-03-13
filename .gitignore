@@ -2,6 +2,5 @@
 .idea
 /RoughWorks
 /node_modules
-/public/js/d3
-/public/js/jQuery
+/lib
 .DS_store
